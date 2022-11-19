@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Inicio / Sign Up </title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="style_4.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <!--Tittle-->
+            <h1 class="form__title">Inicio De Sesion Inge </h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <!--El Ingreso cuando ta se es usuario-->
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Siguiente</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Se te olvido tu contraseña?</a>
+            </p>
+            <!--Para registrarse: -->
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Es tu primera vez en RoadMap? registrate</a>
+            </p>
+        </form>
+        <!--Creacion de una cuenta-->
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Crear una cuenta</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <script src="./src/main.js"></script>
+</body>

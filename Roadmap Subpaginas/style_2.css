@@ -1,0 +1,314 @@
+body{
+    background-color: black;
+}
+.btn1{
+    background-color: rgb(249, 249, 249);
+    border-radius: 23px;
+    padding: 50px 50px 50px 50px;
+    position: absolute;
+    top: 100px;
+    left: 14%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+   
+    opacity: 0.9;
+}
+.btn2{
+
+    background-color: rgb(249, 249, 249);
+    border-radius: 23px;
+    padding: 50px 50px 50px 50px;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    top:68%;
+    left: 20%; 
+}
+.order{
+    
+    opacity: 1;
+}
+.infor{
+    padding: 13px 13px 13px 23px;
+    background-color: white;
+}
+.infor:hover .btn1{
+    opacity: 1;
+    background-color: #313133;
+}
+
+
+
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    /*ESTE PARA Q TODAS LAS LETRAS QUEDNE EN MAYUSCULAS*/
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    /*pARA DARLE EL TOQUE DE OLA, NO LO TOQUEN*/
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    padding: 6px;
+    top: 45%;
+    }
+  
+  button::before {
+    /*aniamciones comunes el borde toca disminuirlo*/
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*eSTOS PORCENTAJES PARA MANIPULAR EL MARCO EN NEON TAMBIEN DEJENLO QUIETO  */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  /*El hover para la animacion cuando se pase el  mouse*/
+  .button:hover, .button:focus {
+    color: white;
+    transform: translateY(-6px);
+  }
+  /*Pasar de opacity 0 a opaticy 1*/
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*el infinite para que la animacion sea constante*/
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  /*Este es un punto de trayectoria     */
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  /* S E G U N D O  B O T O N*/
+  
+.wrap2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button2 {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    /*ESTE PARA Q TODAS LAS LETRAS QUEDNE EN MAYUSCULAS*/
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #ca5293;
+    /*pARA DARLE EL TOQUE DE OLA, NO LO TOQUEN*/
+  background: #ca5293;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px #ca5293;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    padding: 6px;
+    top: 45%;
+    left: 13%;
+    }
+  /*todos los que estan en rojo son como animacions globales par ano estar sobrecargando el css*/
+  button::before {
+    /*aniamciones comunes el borde toca disminuirlo*/
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #05473a;
+    box-shadow: 0 0 60px rgba(232, 241, 239, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*eSTOS PORCENTAJES PARA MANIPULAR EL MARCO EN NEON TAMBIEN DEJENLO QUIETO  */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  /*El hover para la animacion cuando se pase el  mouse*/
+  .button2:hover, .button2:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  /*Pasar de opacity 0 a opaticy 1*/
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid white;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*el infinite para que la animacion sea constante*/
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  /*Este es un punto de trayectoria     */
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  /*T E R C E R  B O T O N*/
+   
+.wrap3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  
+  
+  .button3 {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    /*ESTE PARA Q TODAS LAS LETRAS QUEDNE EN MAYUSCULAS*/
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #ca5293;
+    /*pARA DARLE EL TOQUE DE OLA, NO LO TOQUEN*/
+  background: #ca5293;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px #ca5293;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    padding: 6px;
+    top: 45%;
+    left: 64%;
+    }
+  /*todos los que estan en rojo son como animacions globales par ano estar sobrecargando el css*/
+  button::before {
+    /*aniamciones comunes el borde toca disminuirlo*/
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #05473a;
+    box-shadow: 0 0 60px rgba(232, 241, 239, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*eSTOS PORCENTAJES PARA MANIPULAR EL MARCO EN NEON TAMBIEN DEJENLO QUIETO  */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  /*El hover para la animacion cuando se pase el  mouse*/
+  .button2:hover, .button2:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  /*Pasar de opacity 0 a opaticy 1*/
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid white;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*el infinite para que la animacion sea constante*/
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  /*Este es un punto de trayectoria     */
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
